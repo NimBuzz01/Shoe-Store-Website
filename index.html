@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Home Page</title>
+    <link href="jquery-ui/jquery-ui.css" rel="stylesheet">
+    <link href="jquery-ui-custom/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+<nav class="nav">
+    <a class="logo" href="index.html">SHOE<span>ZTORE</span></a>
+</nav>
+
+<div class="container">
+    <section id="search-col">
+        <form id="search-form" action="#">
+            <fieldset>
+                <h3>Search</h3>
+                <hr>
+                <div id="search-tab">
+                    <label>
+                        <input class="search-bar" type="text" placeholder="Search"/>
+                    </label>
+                    <button class="search-btn"><i class='bx bx-search-alt'></i></button>
+                </div>
+                <label for="name">Select Name:</label>
+                <select name="name" id="name">
+                    <option value="all">Show All</option>
+                    <option value="ATL Trek">ATL Trek</option>
+                    <option value="Nature Ramble">Nature Ramble</option>
+                    <option value="King Ease">King Ease</option>
+                    <option value="Un Maui">Un Maui</option>
+                    <option value="Hero Lite">Hero Lite</option>
+                    <option value="CourtLite">CourtLite</option>
+                </select>
+                <label for="gender">Select Gender:</label>
+                <select name="gender" id="gender">
+                    <option value="all">Show All</option>
+                    <option value="Mens">Mens</option>
+                    <option value="Women">Women</option>
+                    <option value="Universal">Universal</option>
+                </select>
+                <label for="style">Select Style:</label>
+                <select name="style" id="style">
+                    <option value="all">Show All</option>
+                    <option value="Formal">Formal</option>
+                    <option value="Flats">Flats</option>
+                    <option value="Running">Running</option>
+                </select>
+                <label for="size">Select Size:</label>
+                <select name="size" id="size">
+                    <option value="all">Show All</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                </select>
+                <label for="colour">Select Colour:</label>
+                <select name="colour" id="colour">
+                    <option value="all">Show All</option>
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Blue">Blue</option>
+                </select>
+                <p>
+                    <label for="amount">Price range:</label>
+                    <input type="text" id="amount" readonly>
+                </p>
+                <div id="price-slider"></div>
+            </fieldset>
+
+        </form>
+    </section>
+
+    <section id="products-col">
+        <ul class="products-list">
+
+        </ul>
+    </section>
+
+    <aside id="favorites-col">
+        <div class="favorites">
+            <div class="favorites-list">
+                <div class="fav-header">
+                    <h2 class="fav-name">Favourites</h2>
+                    <hr>
+                </div>
+                <ul class="fav-ul">
+                </ul>
+            </div>
+        </div>
+    </aside>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="jquery-ui/jquery-ui.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
